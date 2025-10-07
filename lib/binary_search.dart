@@ -1,18 +1,18 @@
 /// 'list' must be sorted
-int? binarySearch(List<int> myList, int searchValue) {
-  int lowIndex = 0;
-  int highIndex = myList.length - 1;
-  while (lowIndex <= highIndex) {
-    int middleIndex = (lowIndex + highIndex) ~/ 2;
-    final guess = myList[middleIndex];
-    if (guess == searchValue) {
+int? binarySearch(List<int> list, int searchValue) {
+  int low = 0;
+  int high = list.length - 1;
+  while (low <= high) {
+    int middleIndex = (low + high) ~/ 2;
+    final middle = list[middleIndex];
+    if (middle == searchValue) {
       return middleIndex;
     }
-    if (guess < searchValue) {
-      lowIndex = middleIndex + 1;
+    if (middle < searchValue) {
+      low = middleIndex + 1;
     }
-    if (guess > searchValue) {
-      highIndex = middleIndex - 1;
+    if (middle > searchValue) {
+      high = middleIndex - 1;
     }
   }
   return null;
