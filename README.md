@@ -6,11 +6,11 @@ This is a class tutorial on creating hash tables.
 ## H2
 ### H3
 
+This is **bold text**
 
+This is *italicized text*
 
-
-
-
+This is what he said:
 
 > Hello
 >
