@@ -1,4 +1,4 @@
-String? studentSearch(List<Student> studentList, int studentId) {}
+String? studentSearch(List<Student?> studentList, int studentId) {}
 
 class Student {
   final int id;
